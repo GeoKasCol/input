@@ -4,7 +4,7 @@
 *.user
 *build*/
 app/config.pri
-core/merginsecrets.cpp
+
 *.idea
 *.vscode
 test/temp_projects/
@@ -16,7 +16,7 @@ app/android/assets/projects/
 app/android/AndroidManifest.xml
 *.gpkg-wal
 *.gpkg-shm
-Input_keystore.keystore
+
 CMakeLists.txt.user
 app/android/build.gradle
 app/android/.gradle/*
