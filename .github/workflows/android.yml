@@ -20,8 +20,8 @@ concurrency:
 
 jobs:
   android_build:
-    if: ( github.repository == 'MerginMaps/mobile' ) && (!contains(github.event.head_commit.message, 'Translate '))
-    runs-on: macOS
+    if: ( github.repository == 'GeoKasCol/input' ) && (!contains(github.event.head_commit.message, 'Translate '))
+    runs-on: Jorges-MacBook-Pro
     env:
       QT_VERSION: '6.6.0' # use scripts/update_qt_version.bash to change
       NDK_VERSION: r25
