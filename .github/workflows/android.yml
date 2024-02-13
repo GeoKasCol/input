@@ -185,7 +185,7 @@ jobs:
           MERGINSECRETS_DECRYPT_KEY: ${{ secrets.MERGINSECRETS_DECRYPT_KEY }}
         run: |
           cd core/
-          /usr/local/opt/openssl@1.1/bin/openssl \
+          openssl \
               aes-256-cbc -d \
               -in merginsecrets.cpp.enc \
               -out merginsecrets.cpp \
@@ -197,7 +197,7 @@ jobs:
           INPUTKEYSTORE_DECRYPT_KEY: ${{ secrets.INPUTKEYSTORE_DECRYPT_KEY }}
 
         run: |
-          /usr/local/opt/openssl@1.1/bin/openssl \
+          openssl \
            aes-256-cbc -d \
            -in Input_keystore.keystore.enc \
            -out Input_keystore.keystore \
